@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'SteamStatsHub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'steamstatshub',
+        'USER': 'postgres',
+        'PASSWORD': 'Ch33t0lec3t',
+        'HOST': 'localhost',  # Set to your database host
+        'PORT': '5432',       # Default port for PostgreSQL
     }
 }
 
